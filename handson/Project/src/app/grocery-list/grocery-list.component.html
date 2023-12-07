@@ -1,0 +1,49 @@
+ <body>
+    <div class = "row">
+        <h2> Grocery List</h2>
+    </div>
+    
+    <table class = "table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th> ID</th>
+                <th> Veggies</th>
+                <th> Dairy </th>
+                <th> Colddrinks</th>
+                <th> Fruits</th>
+                <th> Dal</th>
+                <th> FrozenFood</th>
+                <th> Cosmetics</th>
+                <th> Detergents</th>
+                <th> Actions </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let grocery of grocerys" >
+                <td> {{grocery.id}} </td>
+                <td> {{ grocery.vegName}} </td>
+                <td> {{ grocery.dName}} </td>
+                <td> {{ grocery.coldName}}</td>
+                <td> {{ grocery.fruits}} </td>
+                <td> {{ grocery.dal}} </td>
+                <td> {{ grocery.froz}} </td>
+                <td> {{ grocery.cos}} </td>
+                <td> {{ grocery.det}} </td>
+                <td>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <button (click) = "updateGrocery(grocery.id)" class = "btn btn-warning" input type="radio" autocomplete="off"> Update</button>
+                    <button (click) = "deleteGrocery(grocery.id)" class = "btn btn-secondary" input type="radio" autocomplete="off" > Delete</button>
+                    <button (click) = "groceryDetails(grocery.id)" class = "btn btn-dark" input type="radio" autocomplete="off" > View</button>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+    
+    
+     <br>
+    <a [routerLink]="['']" class="btn btn-primary">Back to Home</a> 
+    </body> 
+
+   

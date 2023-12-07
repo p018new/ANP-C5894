@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Update Grocery </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> Veggies</label>
+                        <input type="text" class="form-control" id="Veggies" [(ngModel)]="grocery.vegName"
+                            name="Veggies">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Colddrinks</label>
+                        <input type="text" class="form-control" id="Colddrinks" [(ngModel)]="grocery.coldName"
+                            name="Colddrinks">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Fruits</label>
+                        <input type="text" class="form-control" id="Fruits" [(ngModel)]="grocery.fruits"
+                            name="Fruits">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Dal</label>
+                        <input type="text" class="form-control" id="Dal" [(ngModel)]="grocery.dal"
+                            name="Dal">
+                    </div>
+
+                    <div class="form-group">
+                        <label>FrozenFood</label>
+                        <input type="text" class="form-control" id="FrozenFood" [(ngModel)]="grocery.froz"
+                            name="FrozenFood">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Cosmetics</label>
+                        <input type="text" class="form-control" id="Cosmetics" [(ngModel)]="grocery.cos"
+                            name="Cosmetics">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label> Detergents</label>
+                        <input type="text" class="form-control" id="Detergents" [(ngModel)]="grocery.det"
+                            name="Detergents">
+                    </div> 
+                    <br />
+                    <button class="btn btn-warning" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

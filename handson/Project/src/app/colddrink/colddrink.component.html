@@ -1,0 +1,52 @@
+<table>
+    <thead>
+      <tr>
+        <style>
+          table, th, td {
+            border-style: inset;
+          }
+          </style>
+        <th>ColdDrinks</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>D-Mart</th>
+        <th>Reliance Smart</th>
+        <th>BigBasket</th>
+        <th>Reasonable Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Coke</td>
+        <td>Rs 120</td> 
+        <td><img src="https://5.imimg.com/data5/OK/BE/JN/SELLER-59097240/500ml-coca-cola-cold-drinks.jpg" alt="Apple" width="100" height="100"></td>
+        <td>Rs 110</td>
+        <td>Rs 105</td>
+        <td>Rs 140</td>
+
+        
+        <button class="btn btn-primary" (click)="buy('Coke', 105)">Add to Cart</button>
+      <tr>
+        <td>Bisleri Soda</td>
+        <td>Rs 35</td>
+        <td><img src="https://5.imimg.com/data5/IG/NX/WC/SELLER-95214665/bisleri-soda.jpg" alt="Banana" width="100" height="100"></td>
+        <td>Rs 20</td>
+        <td>Rs 36</td>
+        <td>Rs 40</td>
+
+        <button class="btn btn-primary" (click)="buy('Bisleri Soda', 20)">Add to Cart</button>
+       
+      <tr>
+        <td>Coolberg Strawberry Non-Alcholic Beer</td>
+        <td>Rs 99 </td>
+        <td><img src="https://www.bigbasket.com/media/uploads/p/xxl/40122153_2-coolberg-beer-strawberry-non-alcoholic.jpg" alt="Orange" width="100" height="100"></td>
+        <td>Rs 89</td>
+        <td>Rs 80</td>
+        <td>Rs 110</td>
+        
+        
+        <button class="btn btn-primary" (click)="buy('Coolberg Strawberry Non-Alcholic Beer', 80)">Add to Cart</button>
+      </tr>
+    </tbody>
+  </table>
+  

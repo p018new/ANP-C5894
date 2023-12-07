@@ -1,0 +1,52 @@
+
+   <table>
+    <thead>
+      <tr>
+        <style>
+          table, th, td {
+            border-style: inset;
+          }
+          </style>
+        <th>Fruit</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>D-Mart</th>
+        <th>Reliance Smart</th>
+        <th>BigBasket</th>
+        <th>Reasonable Price</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr>
+        <td>Apple</td>
+        <td>Rs 120</td> 
+        <td><img src="https://www.bigbasket.com/media/uploads/p/l/40134281_13-fresho-baby-apple-shimla.jpg" alt="Apple" width="100" height="100"></td>
+        <td>Rs 110</td>
+        <td>Rs 105</td>
+        <td>Rs 140</td>
+       
+        <button class="btn btn-primary" (click)="buy('Apple', 105)">Add to Cart</button>
+      </tr>
+      <tr>
+        <td>Banana</td>
+        <td>Rs 35</td>
+        <td><img src="https://5.imimg.com/data5/EG/HJ/MY-46595757/fresh-banana-281kg-29-500x500.png" alt="Banana" width="100" height="100"></td>
+        <td>Rs 20</td>
+        <td>Rs 36</td>
+        <td>Rs 40</td>
+       
+        <button class="btn btn-primary" (click)="buy('Banana', 20)">Add to Cart</button>
+      </tr>
+      <tr>
+        <td>Orange</td>
+        <td>Rs 59 </td>
+        <td><img src="https://www.bigbasket.com/media/uploads/p/xxl/10000384_9-fresho-orange-kinnow.jpg" alt="Orange" width="100" height="100"></td>
+        <td>Rs 40</td>
+        <td>Rs 49</td>
+        <td>Rs 60</td>
+       
+        <button class="btn btn-primary" (click)="buy('Orange', 40)">Add to Cart</button>
+      </tr>
+    </tbody>
+  </table>
+  
